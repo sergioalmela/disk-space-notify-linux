@@ -7,7 +7,7 @@ NOTIFIED_FILE="notified"
 NOTIFIED="$(cat $NOTIFIED_FILE)"
 
 #If disk space is equal or greather than 95%
-if [ "$NUMBER" -ge 40 ]; then
+if [ "$NUMBER" -ge 95 ]; then
 	#Show warning if was not notified
 	if [ "$NOTIFIED" -ne 1 ]; then
 		notify-send "Your /home partition is over $NUMBER% used"
